@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+const marge = require('mochawesome/reporter');
+Cypress.on('run:end', (totalFailed, failures, runResults) => {
+  generateMochawesomeReport(runResults);
+});
+
+function generateMochawesomeReport(results) {
+  const reportDir = './mochawesome-report';
+  const reportFilename = 'report.json';
+
+  marge.createMochawesome().merge({
+    files: [`${reportDir}/${reportFilename}`],
+  }).to('cypress/reports', 'report.html');
+}
