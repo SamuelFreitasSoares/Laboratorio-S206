@@ -13,7 +13,7 @@ Clone este repositório em sua máquina local.
 Abra um terminal e navegue até o diretório raiz do projeto.
 
 Execute o seguinte comando para iniciar os testes:
-testeste
+N DEU N
 ./node_modules/.bin/cypress run --spec 'cypress/e2e/Trabalho/**/'
 
 
