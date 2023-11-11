@@ -13,11 +13,14 @@ Clone este repositório em sua máquina local.
 Abra um terminal e navegue até o diretório raiz do projeto.
 
 Execute o seguinte comando para iniciar os testes:
-N DEU N
+
 ./node_modules/.bin/cypress run --spec 'cypress/e2e/Trabalho/**/'
 
+esse comando irá executar todos os testes dentro da pasta cypress/e2e/Trabalho
+e irá gerar um relatório de testes na pasta cypress/reports
+para visualizar o relatório de testes, basta abrir o arquivo index.html dentro da pasta cypress/reports
 
-No próprio terminal do VSCode você poderá obter o relatório com detalhes dos testes realizados:
+No próprio terminal do VSCode você também poderá obter o relatório com detalhes dos testes realizados
 
 1.Verificar se a página inicial da Wikipedia é carregada corretamente:
 Testa se a página inicial da Wikipedia é carregada e se o título da página é "Wikipedia".
