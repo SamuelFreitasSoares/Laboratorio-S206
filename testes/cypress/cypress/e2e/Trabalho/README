@@ -6,14 +6,14 @@ Pré-requisitos
 Antes de executar os testes, você precisará ter o Cypress configurado em seu ambiente de desenvolvimento. Certifique-se de seguir as etapas de instalação e configuração apropriadas para o Cypress.
 
 Executando os testes
-Para executar os testes, siga estas etapas:
+Para executar os testes, siga estas etapas: 
 
 Clone este repositório em sua máquina local.
 
 Abra um terminal e navegue até o diretório raiz do projeto.
 
 Execute o seguinte comando para iniciar os testes:
-
+testeste
 ./node_modules/.bin/cypress run --spec 'cypress/e2e/Trabalho/**/'
 
 
