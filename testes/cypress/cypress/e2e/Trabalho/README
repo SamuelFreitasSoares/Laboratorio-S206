@@ -1,4 +1,5 @@
 Testes no Wikipedia com Cypress
+ALUNO: SAMUEL FREITAS MACEDO SOARES - ENG. DE SOFTWARE
 
 Este repositório contém testes automatizados para verificar o funcionamento do site Wikipedia usando o framework de teste Cypress. Os testes foram criados para verificar várias funcionalidades da Wikipedia, desde a verificação da página inicial até a interação com elementos da página.
 
