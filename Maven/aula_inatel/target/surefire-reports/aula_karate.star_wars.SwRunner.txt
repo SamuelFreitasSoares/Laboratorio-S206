@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: aula_karate.star_wars.SwRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.493 s - in aula_karate.star_wars.SwRunner
