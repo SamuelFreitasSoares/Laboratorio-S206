@@ -29,5 +29,7 @@ Scenario: Testando retorno pokemon red e entrando em um dos elementos do array d
     And def idioma = $.names[5].language.url
     And print idioma
     And url idioma
-    Then match response.name == 'es'
+    When method GET
+    Then status 200
+    And match response.name == 'es'
     And match response.id == 7
