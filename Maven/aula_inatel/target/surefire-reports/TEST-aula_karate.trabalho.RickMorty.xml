@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="aula_karate.trabalho.RickMorty" time="6.053" tests="6" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\LABS_ADS\Laboratorio-S206\Maven\aula_inatel\target\test-classes;C:\LABS_ADS\Laboratorio-S206\Maven\aula_inatel\target\classes;C:\Users\samue\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\samue\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\samue\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\samue\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\samue\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\samue\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\samue\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\samue\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\samue\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\samue\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\samue\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\samue\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\samue\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\samue\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\samue\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\samue\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\samue\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\samue\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\samue\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\samue\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\samue\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\samue\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\samue\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\samue\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\samue\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\samue\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\samue\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\samue\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\samue\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\samue\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\samue\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\samue\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\samue\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\samue\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\samue\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\samue\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\samue\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\samue\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\samue\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\samue\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\samue\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\samue\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\samue\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\samue\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\samue\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\samue\AppData\Local\Temp\surefire2507373628675492517\surefirebooter-20231204074629259_3.jar C:\Users\samue\AppData\Local\Temp\surefire2507373628675492517 2023-12-04T07-46-28_936-jvmRun1 surefire-20231204074629259_1tmp surefire_0-20231204074629259_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="RickMorty"/>
+    <property name="surefire.test.class.path" value="C:\LABS_ADS\Laboratorio-S206\Maven\aula_inatel\target\test-classes;C:\LABS_ADS\Laboratorio-S206\Maven\aula_inatel\target\classes;C:\Users\samue\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\samue\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\samue\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\samue\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\samue\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\samue\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\samue\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\samue\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\samue\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\samue\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\samue\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\samue\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\samue\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\samue\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\samue\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\samue\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\samue\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\samue\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\samue\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\samue\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\samue\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\samue\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\samue\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\samue\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\samue\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\samue\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\samue\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\samue\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\samue\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\samue\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\samue\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\samue\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\samue\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\samue\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\samue\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\samue\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\samue\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\samue\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\samue\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\samue\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\samue\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\samue\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\samue\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\samue\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\samue\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\samue\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\samue\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\samue\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\samue"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-12"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\LABS_ADS\Laboratorio-S206\Maven\aula_inatel"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\samue\AppData\Local\Temp\surefire2507373628675492517\surefirebooter-20231204074629259_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.16.1+1-LTS"/>
+    <property name="user.name" value="samue"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-40648"/>
+    <property name="localRepository" value="C:\Users\samue\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\samue\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.16.1"/>
+    <property name="user.dir" value="C:\LABS_ADS\Laboratorio-S206\Maven\aula_inatel"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\samue\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\samue\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files (x86)\Falcon\MinGW\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\nodejs;C:\Users\samue\OneDrive\Documentos\Python\Scripts;C:\Users\samue\OneDrive\Documentos\Python;C:\Users\samue\AppData\Local\Programs\Python\Launcher;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\samue\AppData\Local\Microsoft\WindowsApps;C:\Users\samue\AppData\Local\Programs\Microsoft VS Code\bin;C:\src\flutter\flutter;C:\Users\samue\OneDrive\Documentos\Python;C:\Users\samue\.dotnet\tools;C:\Users\samue\AppData\Roaming\npm;C:\Users\samue\Downloads\Instaladores\sqlite-tools-win-x64-3440000;C:\LABS_ADS\Laboratorio-S206\testes\apache-maven-3.9.5-bin\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="11.0.16.1+1-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="[1:6] Buscando personagem por id válido (id 2)." classname="aula_karate/trabalho/rick_morty" time="2.202">
+    <system-out><![CDATA[07:46:31.064 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:46:32.385 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:46:32.891 [main] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/character/2
+1 > Host: rickandmortyapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:46:33.216 [main] DEBUG com.intuit.karate - response time in milliseconds: 308
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 255935
+1 < Cache-Control: max-age=259200
+1 < Cache-Status: "Netlify Edge"; hit
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 Dec 2023 10:46:32 GMT
+1 < Etag: W/"a6e-zQHAPIKFfD+Wv+P+4aCju24Mapw"
+1 < Expires: Mon, 04 Dec 2023 11:40:57 GMT
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < Vary: Accept-Encoding
+1 < X-Nf-Request-Id: 01HGT6ZMRTWQ6DT870CRTQ4A2S
+1 < X-Powered-By: Express
+{"id":2,"name":"Morty Smith","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/2.jpeg","episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3","https://rickandmortyapi.com/api/episode/4","https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/28","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31","https://rickandmortyapi.com/api/episode/32","https://rickandmortyapi.com/api/episode/33","https://rickandmortyapi.com/api/episode/34","https://rickandmortyapi.com/api/episode/35","https://rickandmortyapi.com/api/episode/36","https://rickandmortyapi.com/api/episode/37","https://rickandmortyapi.com/api/episode/38","https://rickandmortyapi.com/api/episode/39","https://rickandmortyapi.com/api/episode/40","https://rickandmortyapi.com/api/episode/41","https://rickandmortyapi.com/api/episode/42","https://rickandmortyapi.com/api/episode/43","https://rickandmortyapi.com/api/episode/44","https://rickandmortyapi.com/api/episode/45","https://rickandmortyapi.com/api/episode/46","https://rickandmortyapi.com/api/episode/47","https://rickandmortyapi.com/api/episode/48","https://rickandmortyapi.com/api/episode/49","https://rickandmortyapi.com/api/episode/50","https://rickandmortyapi.com/api/episode/51"],"url":"https://rickandmortyapi.com/api/character/2","created":"2017-11-04T18:50:21.651Z"}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[2:13] (Negativo) Buscando personagem por id inválido (id 827)" classname="aula_karate/trabalho/rick_morty" time="0.565">
+    <system-out><![CDATA[07:46:33.340 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:46:33.345 [main] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/character/827
+1 > Host: rickandmortyapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:46:33.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 548
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Status: "Netlify Edge"; fwd=miss
+1 < Content-Length: 31
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 Dec 2023 10:46:33 GMT
+1 < Etag: W/"1f-t9l5xVmJZaPHJIukjZQ7Mw4gpG8"
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < X-Nf-Request-Id: 01HGT6ZMZB61EZFKRQ72BF0RHD
+1 < X-Powered-By: Express
+{"error":"Character not found"}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[3:19] Buscando multiplos personagens por ids válidos (1, 2 e 3)" classname="aula_karate/trabalho/rick_morty" time="0.089">
+    <system-out><![CDATA[07:46:33.902 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:46:33.915 [main] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/character/1,2,3
+1 > Host: rickandmortyapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:46:33.980 [main] DEBUG com.intuit.karate - response time in milliseconds: 52
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 122610
+1 < Cache-Control: max-age=259200
+1 < Cache-Status: "Netlify Edge"; hit
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 Dec 2023 10:46:33 GMT
+1 < Etag: W/"1e41-bNqdBr/nSRoOWeaDtiDcGh86Hq4"
+1 < Expires: Wed, 06 Dec 2023 00:43:03 GMT
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < Vary: Accept-Encoding
+1 < X-Nf-Request-Id: 01HGT6ZNH0JEB0E1AF3YFGVG2F
+1 < X-Powered-By: Express
+[{"id":1,"name":"Rick Sanchez","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/1.jpeg","episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3","https://rickandmortyapi.com/api/episode/4","https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/28","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31","https://rickandmortyapi.com/api/episode/32","https://rickandmortyapi.com/api/episode/33","https://rickandmortyapi.com/api/episode/34","https://rickandmortyapi.com/api/episode/35","https://rickandmortyapi.com/api/episode/36","https://rickandmortyapi.com/api/episode/37","https://rickandmortyapi.com/api/episode/38","https://rickandmortyapi.com/api/episode/39","https://rickandmortyapi.com/api/episode/40","https://rickandmortyapi.com/api/episode/41","https://rickandmortyapi.com/api/episode/42","https://rickandmortyapi.com/api/episode/43","https://rickandmortyapi.com/api/episode/44","https://rickandmortyapi.com/api/episode/45","https://rickandmortyapi.com/api/episode/46","https://rickandmortyapi.com/api/episode/47","https://rickandmortyapi.com/api/episode/48","https://rickandmortyapi.com/api/episode/49","https://rickandmortyapi.com/api/episode/50","https://rickandmortyapi.com/api/episode/51"],"url":"https://rickandmortyapi.com/api/character/1","created":"2017-11-04T18:48:46.250Z"},{"id":2,"name":"Morty Smith","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"unknown","url":""},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image":"https://rickandmortyapi.com/api/character/avatar/2.jpeg","episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3","https://rickandmortyapi.com/api/episode/4","https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/28","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31","https://rickandmortyapi.com/api/episode/32","https://rickandmortyapi.com/api/episode/33","https://rickandmortyapi.com/api/episode/34","https://rickandmortyapi.com/api/episode/35","https://rickandmortyapi.com/api/episode/36","https://rickandmortyapi.com/api/episode/37","https://rickandmortyapi.com/api/episode/38","https://rickandmortyapi.com/api/episode/39","https://rickandmortyapi.com/api/episode/40","https://rickandmortyapi.com/api/episode/41","https://rickandmortyapi.com/api/episode/42","https://rickandmortyapi.com/api/episode/43","https://rickandmortyapi.com/api/episode/44","https://rickandmortyapi.com/api/episode/45","https://rickandmortyapi.com/api/episode/46","https://rickandmortyapi.com/api/episode/47","https://rickandmortyapi.com/api/episode/48","https://rickandmortyapi.com/api/episode/49","https://rickandmortyapi.com/api/episode/50","https://rickandmortyapi.com/api/episode/51"],"url":"https://rickandmortyapi.com/api/character/2","created":"2017-11-04T18:50:21.651Z"},{"id":3,"name":"Summer Smith","status":"Alive","species":"Human","type":"","gender":"Female","origin":{"name":"Earth (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"location":{"name":"Earth (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"image":"https://rickandmortyapi.com/api/character/avatar/3.jpeg","episode":["https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31","https://rickandmortyapi.com/api/episode/32","https://rickandmortyapi.com/api/episode/33","https://rickandmortyapi.com/api/episode/34","https://rickandmortyapi.com/api/episode/35","https://rickandmortyapi.com/api/episode/36","https://rickandmortyapi.com/api/episode/38","https://rickandmortyapi.com/api/episode/39","https://rickandmortyapi.com/api/episode/40","https://rickandmortyapi.com/api/episode/41","https://rickandmortyapi.com/api/episode/42","https://rickandmortyapi.com/api/episode/43","https://rickandmortyapi.com/api/episode/44","https://rickandmortyapi.com/api/episode/45","https://rickandmortyapi.com/api/episode/46","https://rickandmortyapi.com/api/episode/47","https://rickandmortyapi.com/api/episode/48","https://rickandmortyapi.com/api/episode/49","https://rickandmortyapi.com/api/episode/51"],"url":"https://rickandmortyapi.com/api/character/3","created":"2017-11-04T19:09:56.428Z"}]
+
+]]></system-out>
+  </testcase>
+  <testcase name="[4:26] (Negativo) Buscando episódio por nome inexistente." classname="aula_karate/trabalho/rick_morty" time="0.685">
+    <failure message="status code was: 500, expected: 404, response time in milliseconds: 652, url: https://rickandmortyapi.com/api/episode/%3Fname=EpisodioInexistente, response: &#10;{&quot;error&quot;:&quot;Hey! you must provide an id&quot;}&#10;classpath:aula_karate/trabalho/rick_morty.feature:30" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 404, response time in milliseconds: 652, url: https://rickandmortyapi.com/api/episode/%3Fname=EpisodioInexistente, response: 
+{"error":"Hey! you must provide an id"}
+classpath:aula_karate/trabalho/rick_morty.feature:30
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:167)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:184)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:60)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:502)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:67)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:95)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[07:46:33.997 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:46:34.001 [main] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/episode/%3Fname=EpisodioInexistente
+1 > Host: rickandmortyapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:46:34.654 [main] DEBUG com.intuit.karate - response time in milliseconds: 652
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1
+1 < Cache-Status: "Netlify Edge"; fwd=miss
+1 < Content-Length: 39
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 Dec 2023 10:46:34 GMT
+1 < Etag: W/"27-bBMalQSj0TBYYHRnl6oTGF0kZoM"
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < X-Nf-Request-Id: 01HGT6ZNKX1JQZFQ5QAXVSQPKP
+1 < X-Powered-By: Express
+{"error":"Hey! you must provide an id"}
+
+07:46:34.663 [main] ERROR com.intuit.karate - classpath:aula_karate/trabalho/rick_morty.feature:30
+Then status 404
+status code was: 500, expected: 404, response time in milliseconds: 652, url: https://rickandmortyapi.com/api/episode/%3Fname=EpisodioInexistente, response: 
+{"error":"Hey! you must provide an id"}
+classpath:aula_karate/trabalho/rick_morty.feature:30
+]]></system-out>
+  </testcase>
+  <testcase name="[5:32] Buscar personagens por status válido" classname="aula_karate/trabalho/rick_morty" time="0.286">
+    <failure message="status code was: 500, expected: 200, response time in milliseconds: 274, url: https://rickandmortyapi.com/api/character/%3Fstatus=alive, response: &#10;{&quot;error&quot;:&quot;Hey! you must provide an id&quot;}&#10;classpath:aula_karate/trabalho/rick_morty.feature:36" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 500, expected: 200, response time in milliseconds: 274, url: https://rickandmortyapi.com/api/character/%3Fstatus=alive, response: 
+{"error":"Hey! you must provide an id"}
+classpath:aula_karate/trabalho/rick_morty.feature:36
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:167)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:184)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:60)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:502)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:67)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:95)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[07:46:34.684 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:46:34.688 [main] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/character/%3Fstatus=alive
+1 > Host: rickandmortyapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:46:34.962 [main] DEBUG com.intuit.karate - response time in milliseconds: 274
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < Cache-Status: "Netlify Edge"; fwd=miss
+1 < Content-Length: 39
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 Dec 2023 10:46:34 GMT
+1 < Etag: W/"27-bBMalQSj0TBYYHRnl6oTGF0kZoM"
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < X-Nf-Request-Id: 01HGT6ZP965G3KBAG6RC3D7NEP
+1 < X-Powered-By: Express
+{"error":"Hey! you must provide an id"}
+
+07:46:34.964 [main] ERROR com.intuit.karate - classpath:aula_karate/trabalho/rick_morty.feature:36
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 274, url: https://rickandmortyapi.com/api/character/%3Fstatus=alive, response: 
+{"error":"Hey! you must provide an id"}
+classpath:aula_karate/trabalho/rick_morty.feature:36
+]]></system-out>
+  </testcase>
+  <testcase name="[6:39] Buscar episódios por número de página válido" classname="aula_karate/trabalho/rick_morty" time="1.108">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 282, url: https://rickandmortyapi.com/api/episode%3Fpage=2, response: &#10;{&quot;error&quot;:&quot;There is nothing here.&quot;}&#10;classpath:aula_karate/trabalho/rick_morty.feature:43" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 282, url: https://rickandmortyapi.com/api/episode%3Fpage=2, response: 
+{"error":"There is nothing here."}
+classpath:aula_karate/trabalho/rick_morty.feature:43
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:167)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:184)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:60)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:502)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:67)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:95)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[07:46:34.974 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:46:34.977 [main] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/episode%3Fpage=2
+1 > Host: rickandmortyapi.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:46:35.260 [main] DEBUG com.intuit.karate - response time in milliseconds: 282
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2
+1 < Cache-Status: "Netlify Edge"; fwd=miss
+1 < Content-Length: 34
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 Dec 2023 10:46:35 GMT
+1 < Etag: W/"22-rNAniyb/O2Wq76tLR33CEMwGb6U"
+1 < Server: Netlify
+1 < Strict-Transport-Security: max-age=31536000
+1 < X-Nf-Request-Id: 01HGT6ZPJGGAX5689X9347C595
+1 < X-Powered-By: Express
+{"error":"There is nothing here."}
+
+07:46:35.261 [main] ERROR com.intuit.karate - classpath:aula_karate/trabalho/rick_morty.feature:43
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 282, url: https://rickandmortyapi.com/api/episode%3Fpage=2, response: 
+{"error":"There is nothing here."}
+classpath:aula_karate/trabalho/rick_morty.feature:43
+---------------------------------------------------------
+feature: classpath:aula_karate/trabalho/rick_morty.feature
+scenarios:  6 | passed:  3 | failed:  3 | time: 2,7571
+---------------------------------------------------------
+
+Karate version: 1.4.1
+======================================================
+elapsed:   5,05 | threads:    1 | thread time: 2,76 
+features:     1 | skipped:    0 | efficiency: 0,55
+scenarios:    6 | passed:     3 | failed: 3
+======================================================
+>>> failed features:
+status code was: 500, expected: 404, response time in milliseconds: 652, url: https://rickandmortyapi.com/api/episode/%3Fname=EpisodioInexistente, response: 
+{"error":"Hey! you must provide an id"}
+classpath:aula_karate/trabalho/rick_morty.feature:30
+status code was: 500, expected: 200, response time in milliseconds: 274, url: https://rickandmortyapi.com/api/character/%3Fstatus=alive, response: 
+{"error":"Hey! you must provide an id"}
+classpath:aula_karate/trabalho/rick_morty.feature:36
+status code was: 404, expected: 200, response time in milliseconds: 282, url: https://rickandmortyapi.com/api/episode%3Fpage=2, response: 
+{"error":"There is nothing here."}
+classpath:aula_karate/trabalho/rick_morty.feature:43
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.4.1
+file:///C:/LABS_ADS/Laboratorio-S206/Maven/aula_inatel/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
