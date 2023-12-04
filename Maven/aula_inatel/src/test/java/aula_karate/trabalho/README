@@ -1,0 +1,18 @@
+Executando os Testes:
+1. Abra um terminal no VSCode
+2. Navegue até o diretório do projeto
+3. execute os teste com o seguinte comando, sem as aspas: 'mvn test -Dtest=Trabalho'
+4. Após a execução dos testes, verifique o diretório target e abra o arquivo 'karate-summary.html' em um navegador para visualizar os resultados.
+
+
+
+RESPOSTAS DAS PERGUNTAS 1 A 6:
+
+1) Por ser um único arquivo .feature, se trata de apenas uma suíte de testes.
+2) Os testes desenvolvidos são automatizados, pois utilizam do Karate, que é uma ferramenta de automatização de testes de API
+3) Os testes estão na camada de testes funcionais, pois estão focados na verificação do comportamento funcional da API.
+4) Os testes desenvolvidos são principalmente funcionais, pois estão verificando o comportamento da API em relação a operações específicas,
+como encontrar usuários, postagens e comentários, além de criar um novo usuário
+5) Os testes não se enquadram na categoria de testes end-to-end (E2E), pois estão focados em operações específicas da API. 
+Os testes E2E geralmente envolvem simular a jornada do usuário por meio de todo o sistema
+6) É necessário principalmente que o ambiente de execução seja consistente e as condições iniciais estejam presentes
